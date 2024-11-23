@@ -12,7 +12,7 @@ const News = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://api.mediastack.com/v1/news?access_key=${apiNews}&limit=${limit}&offset=${(currentPage - 1) * limit}`)
+    fetch(`https://api.mediastack.com/v1/news?access_key=${apiNews}&limit=${limit}&offset=${(currentPage - 1) * limit}`)
       .then(response => response.json())
       .then(data => {
         setNewsData(data.data);
