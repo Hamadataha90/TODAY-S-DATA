@@ -55,7 +55,7 @@ const Currency = () => {
 
     try {
       const currencyList = currencies.join(',');
-      const response = await fetch(`http://apilayer.net/api/live?access_key=${currentAPI}&currencies=${currencyList}&source=${selectedCurrencies[0]}&format=1`);
+      const response = await fetch(`https://apilayer.net/api/live?access_key=${currentAPI}&currencies=${currencyList}&source=${selectedCurrencies[0]}&format=1`);
 
       // If the response is not OK, throw an error
       if (!response.ok) {
