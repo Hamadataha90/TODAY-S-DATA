@@ -1,0 +1,232 @@
+
+.navbar {
+  padding-left: 20px; 
+  padding-right: 20px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+
+
+/* Home page styles */
+.home  {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+.crypto {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.home .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.home .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.home .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+span {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+
+
+.custom-card {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 50px;
+ width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover .card-image {
+  transform: scale(1.1); 
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 233, 233, 0.436); 
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-card:hover .card-overlay {
+  opacity: 1;
+}
+
+
+
+
+/* تنسيق الصفحة */
+.crypto-container {
+  padding: 20px;
+  background-color: #f4f4f4; /* خلفية فاتحة */
+  color: #333; /* نص غامق */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.crypto-container h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* تنسيق الجدول */
+.table-responsive {
+  max-height: 500px;
+  overflow-y: auto; /* إضافة التمرير العمودي عند الحاجة */
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.crypto-table th, .crypto-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.crypto-table th {
+  background-color: #333;
+  color: white;
+}
+
+.crypto-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* تنسيق سعر التغيير (24h) */
+.positive {
+  color: #4caf50; /* أخضر */
+}
+
+.negative {
+  color: #f44336; /* أحمر */
+}
+
+/* تنسيق حالة التحميل */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+}
+
+/* تنسيق التنبيه عند حدوث خطأ */
+.error {
+  color: white;
+  background-color: #f44336;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+
+
+
+
+/* 
+.custom-dropdown-menu {
+  max-height: 200px;  
+  overflow-y: auto;   
+} */
+
+
+.convert-icon {
+  transition: transform 0.3s ease, fill 0.5s ease; 
+}
+
+.convert-icon:hover {
+  color: #d41717; 
+  transform: scale(1.2); 
+}
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.footer .nav-link {
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.footer .nav-link:hover {
+  background-color: #495057;
+  color: white;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+
